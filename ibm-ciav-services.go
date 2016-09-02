@@ -120,7 +120,7 @@ func (t *AssetManagementChaincode) assign(stub *shim.ChaincodeStub, args []strin
 	return nil, err
 }
 
-func (t *AssetManagementChaincode) transfer(stub *shim.ChaincodeStube, args []string) ([]byte, error) {
+func (t *AssetManagementChaincode) transfer(stub *shim.ChaincodeStub, args []string) ([]byte, error) {
 	myLogger.Debug("Transfer...")
 
 	if len(args) != 2 {
